@@ -8,7 +8,6 @@ class ESAVisualizer:
     def __init__(self, base_dir):
         self.charts_dir = os.path.join(base_dir, 'charts')
         os.makedirs(self.charts_dir, exist_ok=True)
-        # 設定中文與負號防亂碼
         plt.rcParams['font.sans-serif'] = ['Microsoft JhengHei', 'Arial']
         plt.rcParams['axes.unicode_minus'] = False 
 
@@ -126,8 +125,7 @@ class ESAVisualizer:
                 ax2.set_title(f'final', fontsize=11, fontweight='bold')
                 ax2.grid(True, ls="--", alpha=0.3)
                 ax2.legend(loc='lower right', fontsize=9)
-                
-                # 總標題
+
                 plt.suptitle(f'Symmetric Dual-Bound Analysis - {f} (Seed {s})', fontsize=14, fontweight='bold', y=0.96)
                 plt.tight_layout(rect=[0, 0, 1, 0.95])
                 
