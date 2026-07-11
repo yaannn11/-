@@ -11,7 +11,7 @@ class EllipsoidFunction:
     def __call__(self, x):
         return np.sum(self.coeffs * (x ** 2))
 
-# 2. Rosenbrock (Shifted Rotated Rosenbrock - CEC F6 Definition)
+# 2. Rosenbrock 
 class RosenbrockFunction:
     def __init__(self, dim):
         self.dim = dim
@@ -22,7 +22,7 @@ class RosenbrockFunction:
 
         return np.sum(100.0 * (x[1:] - x[:-1]**2)**2 + (x[:-1] - 1.0)**2)
 
-# 3. Ackley (Shifted Rotated Ackley - CEC F8 Definition)
+# 3. Ackley 
 class AckleyFunction:
     def __init__(self, dim):
         self.dim = dim
@@ -38,7 +38,7 @@ class AckleyFunction:
         term2 = -np.exp(sum_cos / d)
         return term1 + term2 + 20.0 + np.e
 
-# 4. Griewank (Shifted Rotated Griewank - CEC F7 Definition)
+# 4. Griewank 
 class GriewankFunction:
     def __init__(self, dim):
         self.dim = dim
