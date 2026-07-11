@@ -6,8 +6,8 @@ dim = 30
 max_nfe = 200
 
 # 實驗範疇設定
-seeds = [10]#, 20, 30, 42, 50]
-functions = ['Ellipsoid']#, 'Rosenbrock', 'Ackley', 'Griewank', 'SRR', 'RHC1', 'RHC2']
+seeds = [10, 20, 30, 42, 50]
+functions = ['Ellipsoid', 'Rosenbrock', 'Ackley', 'Griewank', 'SRR', 'RHC1', 'RHC2']
 
 #  路徑設定
 base_dir = os.path.dirname(os.path.abspath(__file__))
