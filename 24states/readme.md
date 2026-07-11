@@ -1,6 +1,6 @@
-## 專案改進內容
+## 延伸
 
-本以 **Evolutionary Sampling Agent（ESA）** 為基礎進行改良，針對 **Q-learning 決策機制**和 **Exploration 探索策略**進行優化，以提升演算法在高維最佳化問題中的搜尋效率、收斂速度與穩定性。
+以 **Evolutionary Sampling Agent（ESA）** 為基礎進行改良，針對 **Q-learning 決策機制**和 **Exploration 探索策略**進行優化，以提升演算法在高維最佳化問題中的搜尋效率、收斂速度與穩定性。
 
 ---
 
