@@ -1,4 +1,4 @@
-# run_experiments.py
+
 import time
 import multiprocessing
 import numpy as np
