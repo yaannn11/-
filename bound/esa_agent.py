@@ -44,9 +44,6 @@ class EvolutionarySamplingAgent:
         self.action_counts = {0: 0, 1: 0, 2: 0, 3: 0}
         self.safety_multiplier = 0.5
         self.current_safety_multiplier = self.safety_multiplier
-        #=====================================================================
-        # 💡 新增：動態計算決策空間的最小距離閾值（例如：全局對角線長度的 0.1%）
-        # =====================================================================
         domain_diagonal = np.linalg.norm(self.ub - self.lb)
         self.min_dist_threshold = 1e-3 * domain_diagonal
         
@@ -118,31 +115,24 @@ class EvolutionarySamplingAgent:
         X_sorted = X[idx]
         y_sorted = y[idx]
         
-        # =====================================================================
-        # 💡 核心修改：距離篩選過濾器 (Distance Filter)
-        # =====================================================================
         filtered_X = []
         filtered_y = []
         
         for i in range(len(X_sorted)):
             pt = X_sorted[i]
-            # 如果是第一個點（當前最優點），無條件保留
+
             if len(filtered_X) == 0:
                 filtered_X.append(pt)
                 filtered_y.append(y_sorted[i])
             else:
-                # 計算當前點與「已經被保留的點」之間的最小距離
                 dists = np.linalg.norm(np.array(filtered_X) - pt, axis=1)
                 if np.min(dists) >= self.min_dist_threshold:
                     filtered_X.append(pt)
                     filtered_y.append(y_sorted[i])
                     
-            # 如果收集到的優質且不重複的點已經夠了，就提早結束
             if len(filtered_X) >= k:
                 break
                 
-        # 防禦機制：如果過濾完發現點太少（例如小於 5 個點），會導致 RBF 無法正常擬合
-        # 此時放寬限制，退回使用原始未過濾的前 k 個點
         if len(filtered_X) < min(k, 5):
             return X_sorted[:k], y_sorted[:k]
             
@@ -397,17 +387,15 @@ class EvolutionarySamplingAgent:
     import numpy as np
 
     def run(self):
-        # 初始化資料庫與固定長度的歷史空間
         self.initialize_db()
         state = self.current_state
         self._init_history_buffers()
         
-        # 主優化迴圈
         while self.nfe < self.max_nfe:
             action_approved = False
             retry_count = 0
             max_retries = 5
-            start_nfe = self.nfe  # 記住進入這一輪優化時的初始 NFE
+            start_nfe = self.nfe  
 
             while not action_approved and retry_count < max_retries:
                 action = self.agent.select_action(state)
@@ -432,7 +420,6 @@ class EvolutionarySamplingAgent:
         actual_round_nfe = list(range(self.nfe + 1))
         return self._get_return_dict(actual_round_nfe)
     def _init_history_buffers(self):
-        #初始化以 NFE 為索引的固定長度空間
         size = self.max_nfe + 1
         self.history_retries = [-1] * size
         self.history_multipliers = [self.safety_multiplier] * size
@@ -448,7 +435,6 @@ class EvolutionarySamplingAgent:
 
 
     def _execute_action(self, action, state, start_nfe):
-        #執行對應的 Action並將輸出格式標準化
         if action in (0, 1, 2):
             if action == 0:
                 res = self.action_a1(state)
@@ -476,7 +462,6 @@ class EvolutionarySamplingAgent:
 
 
     def _update_history_records(self, nfe_list, errors, lb_list, ub_list):
-        #精準紀錄 First 視角與 Final 視角的歷史軌跡
         for idx, nfe_pos in enumerate(nfe_list):
             n = int(min(nfe_pos, self.max_nfe))
             
