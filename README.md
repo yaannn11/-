@@ -12,6 +12,19 @@ Q-learning 以八個狀態表示「上一個動作為哪一種策略」以及「
 * 2.演算法執行流程、測試函數與資料輸出
   在每一輪搜尋中，Q-learning 代理人先依目前狀態選擇 a1、a2、a3 或 a4。a1 以DE產生試驗向量並由全域Cubic RBF篩選；a2在優良樣本所形成的局部範圍內，以JADE最小化代理模型；a3依隨機維度順序逐一交換歷史優良解的變數；a4則在目前最佳解附近建立信賴區域，並依真實與預測改善比率調整搜尋半徑。候選解完成真實函數評估後，若改善歷史最佳值，程式給予獎勵1，否則為0，再更新狀態與Q-table。此流程持續執行至NFE達到1000。
 實驗涵蓋Ellipsoid、Rosenbrock、Ackley、Griewank、SRR、RHC1與RHC2七個函數，並分別設定為30、50 與 100維。每個條件使用五組固定隨機種子10、20、30、40 與50，以平行運算執行。30與50維的 SRR、RHC1、RHC2 由 opfunu 的 CEC 2005 函數提供；100維版本則依程式中的固定種子產生平移向量與正交旋轉矩陣，以建立對應的高維測試環境。每次執行輸出最佳適應值、平均值、標準差、最佳與最差結果、收斂軌跡、RBF 預測誤差、條件數、最終Q-table，以及四種策略的使用次數與比例，作為後續比較不同函數、維度與策略行為的分析資料。
-
-
+# 三、實驗流程
+# 四、延伸內容
+* 延伸研究1：基於 Rippa 方法的自適應核心選擇 (Adaptive Kernel Selection)
+1. 研究動機與背景 (Motivation)
+在傳統的代理模型（Surrogate Model）或核函數方法中，選擇最適合的核函數（如 Cubic 或 Gaussian）通常需要耗費大量的計算資源進行交叉驗證與重新訓練。本延伸研究旨在引入 Rippa 方法，在完全不需要重新訓練模型的前提下，實現一瞬間評估多種核函數對各個資料點的預測誤差，進而達到自適應核心（Adaptive Kernel）的動態優化。
+2. 理論與研究方法 (Methodology)本方法核心基於 Leave-One-Out 交叉驗證（LOOCV）的誤差估計公式。當原始模型的核矩陣求逆後的對角線數值已知時，第i個資料點在特定核函數下的LOOCV預測誤差e_i可以透過以下公式一瞬間計算完成：
+<img width="128" height="94" alt="image" src="https://github.com/user-attachments/assets/91aa49bc-83f9-45cc-8204-765746a1cea5" />
+其中：
+alpha_i為模型計算出的權重（Weights）
+d_i為核矩陣求逆後的對角線數值（Diagonal elements of the inverse kernel matrix）
+3.自動化執行流程
+* 誤差計算：利用上述公式，在不重新訓練的情況下，分別計算出每個資料點在Cubic與 Gaussian兩種核心下的絕對誤差。
+* 自適應選擇 (Adaptive Selection)：針對每一個獨立的資料點，進行自動化比較：
+若<img width="290" height="54" alt="image" src="https://github.com/user-attachments/assets/7eaecf70-2dfa-4c03-9c0e-6247f4e100bf" /> 則該點動態採用 Cubic 核心。反之，則採用Gaussian核心。
+* 多維度驗證：此自動化演算法已分別在30dim與50dim的實驗數據上完成獨立驗證。
 
