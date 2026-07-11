@@ -22,6 +22,7 @@ Q-learning 以八個狀態表示「上一個動作為哪一種策略」以及「
 其中：
 alpha_i為模型計算出的權重（Weights）
 d_i為核矩陣求逆後的對角線數值（Diagonal elements of the inverse kernel matrix）
+
 3.自動化執行流程
 * 誤差計算：利用上述公式，在不重新訓練的情況下，分別計算出每個資料點在Cubic與 Gaussian兩種核心下的絕對誤差。
 * 自適應選擇 (Adaptive Selection)：針對每一個獨立的資料點，進行自動化比較：
