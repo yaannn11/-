@@ -6,11 +6,9 @@ import pandas as pd
 
 class ESADataManager:
     def __init__(self):
-        # 確保所有輸出目錄都存在
         os.makedirs(config.CHARTS_DIR, exist_ok=True)
         os.makedirs(config.RESULTS_DIR, exist_ok=True)
     def save_text_report(self, results_dict, summary_stats):
-        """將統計學結果輸出為結構化的文字報告與 Markdown 表格"""
         print(f"Saving text report to: {config.OUTPUT_TXT_PATH}")
         with open(config.OUTPUT_TXT_PATH, 'w', encoding='utf-8') as out_f:
             out_f.write("========================================================\n")
@@ -56,9 +54,7 @@ class ESADataManager:
             out_f.write("========================================================\n")
 
     def save_analysis_csv(self, results_dict):
-        """將詳細的評估紀錄與安全防禦歷史儲存為 CSV 檔案"""
-        
-        # 1. 儲存預測誤差與歷史軌跡
+        """上下限歷史"""
        
         with open(config.ERRORS_CSV_PATH, 'w', encoding='utf-8') as f_rmse:
             f_rmse.write("Function,Seed,NFE,Action,State,Reward,Predicted_Y,Actual_Y,Error,Relative_Error,Min_Dist_DB\n")
@@ -82,7 +78,7 @@ class ESADataManager:
                         f_q.write(f"{f},{s},{state_idx},{q_vals[0]:.6e},{q_vals[1]:.6e},{q_vals[2]:.6e},{q_vals[3]:.6e}\n")
         print(f"Q-tables file saved to {config.Q_tables_path}")
         
-        # 6.4 Save Strategy Usage Counts
+        # Save Strategy Usage Counts
         with open(config.usage_path, 'w', encoding='utf-8') as f_use:
             f_use.write("Function,Seed,Action_0_Count,Action_1_Count,Action_2_Count,Action_3_Count,Action_0_Ratio,Action_1_Ratio,Action_2_Ratio,Action_3_Ratio\n")
             for f in config.functions:
@@ -98,9 +94,6 @@ class ESADataManager:
                                 f"{ratios[0]:.4f},{ratios[1]:.4f},{ratios[2]:.4f},{ratios[3]:.4f}\n")
         print(f"Strategy usage counts file saved to {config.usage_path}")
         
-        # =====================================================================
-        # 💡 6.5 儲存安全防禦歷史紀錄 (重試次數、安全係數、預測誤差)
-        # =====================================================================
         
         with open(config.SAFETY_CSV_PATH, 'w', encoding='utf-8') as f_safety:
             f_safety.write("Function,Seed,NFE,Retry_Count,Safety_Multiplier,Lower_Buffer,Upper_Buffer,First_Improvement,Final_Lower_Buffer,Final_Upper_Buffer,Final_Improvement,All_Predicted_Improvements\n")
@@ -109,7 +102,7 @@ class ESADataManager:
                     retries = results_dict[f][s]['history_retries']
                     multipliers = results_dict[f][s]['history_multipliers']
                     round_nfe = results_dict[f][s]['history_round_nfe'] 
-                    errors = results_dict[f][s]['history_errors']# 這裡面現在存的是串好的字串
+                    errors = results_dict[f][s]['history_errors']
                     first_imp= results_dict[f][s]['history_first_improvement']
                     final_imp= results_dict[f][s]['history_final_improvement']
                     history_buffers= results_dict[f][s]['history_buffers']
