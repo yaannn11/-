@@ -24,8 +24,7 @@ pip install opfunu
 python run_experiments.py
 ```
 
-## 實作設計 (Implementation Details)
-
+## 實作設計
 在代理模型預測後與送入真實評估前加入一道主動攔截過濾網，具體執行步驟如下：
 
 <details>
@@ -76,7 +75,7 @@ graph TD
 * 若 Agent 連續嘗試了 n 次皆未能通過區間判定，則將倍數參數 k 擴大一定比例，放寬上下限。
 * 放寬後，Agent 再次嘗試 n 次，直到成功送出評估為止。
 
-## 實驗數據對比 (Experimental Results)：
+## 實驗數據對比：
 
 ### 1. 基準版本 (未加入機制)
 | Function | Best | Worst | Mean | Std Dev |
@@ -101,7 +100,7 @@ graph TD
 | RHC2 | 9.166678e+02 | 9.244324e+02 | 9.202452e+02 | 2.739376e+00 |
 
 ### i. 動態容忍區間運作示意
-本機制的雙向動態邊界實際執行狀況如下圖（以 Ackley 函數 Seed 10 , SRR 函數 Seed 10 為例)。可以觀測到邊界隨著數據標準差的改變進行動態縮放，並攔截了越界的無效預測：
+本機制的雙向動態邊界實際執行狀況如下圖（以 30 維的 Ackley 函數 Seed 10 , SRR 函數 Seed 10 為例)。可以觀測到邊界隨著數據標準差的改變進行動態縮放，並攔截了越界的無效預測：
 
 ![動態雙向邊界邊界變化示意](./plots/Ackley_seed10_safety_dual_bound.png)
 ![動態雙向邊界邊界變化示意](./plots/SRR_seed10_safety_dual_bound.png)
