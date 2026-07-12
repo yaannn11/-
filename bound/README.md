@@ -16,7 +16,6 @@
 
 在代理模型預測後與送入真實評估前加入一道主動攔截過濾網，具體執行步驟如下：
 
-<div style="max-width: 500px; margin: 0 auto;">
 ```mermaid
 graph TD
     A[步驟一: 計算雙向動態邊界] --> B[步驟二: 代理模型計算預測值]
