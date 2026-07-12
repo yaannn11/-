@@ -168,7 +168,9 @@ SUMMARY STATISTICS MATRIX
 
 <img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/bac36b4f-b5bc-459d-840e-4c60f2ee0fce" />
 
-<img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/4ccb2cb5-d5ca-4513-8569-2cea5c6f5ca5" /><img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/af99304b-d271-4ef2-8e71-faf015fc6cc6" /><img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/baeed1c7-1a0c-4ca2-9c6b-48d771160eb0" />
+<img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/af99304b-d271-4ef2-8e71-faf015fc6cc6" />
+<img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/baeed1c7-1a0c-4ca2-9c6b-48d771160eb0" />
+<img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/4ccb2cb5-d5ca-4513-8569-2cea5c6f5ca5" />
 
 
 ### 5.2第二階段：改善a2策略成功率
@@ -194,6 +196,16 @@ SUMMARY STATISTICS MATRIX
 
 <img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/e812ad9a-408d-4608-9ec1-cb4ab9366127" />
 
+<img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/4718edb8-fe22-4804-9439-04f23cb0a7e6" />
+<img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/79193af2-d990-4b9d-b7ad-26d0358a0df2" />
+<img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/cb7cabe8-eaf3-49e4-a444-2966d3c02bd6" />
+<img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/524adeb5-3eb8-462a-881d-cb3df5aa7d9a" />
+
+<img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/065de9fe-d191-4559-b45c-2e03a193249f" />
+<img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/15eb1681-8def-465d-bfab-f9e9b1f58571" />
+<img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/241c39bc-3014-4996-8383-a466e5176e40" />
+
+
 #### 分支2:
 SUMMARY STATISTICS MATRIX
 | Function | Best | Worst | Mean | Std Dev |
@@ -205,6 +217,9 @@ SUMMARY STATISTICS MATRIX
 | SRR | -2.533169e+02 | -7.981912e+01 | -2.006565e+02 | 6.313259e+01 |
 | RHC1 | 2.144357e+02 | 4.447704e+02 | 3.161504e+02 | 8.124374e+01 |
 | RHC2 | 9.159692e+02 | 9.251510e+02 | 9.194437e+02 | 3.335801e+00 |
+
+<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/c762e051-5ca2-4e40-9ded-a1a5d42bdd79" />
+
 
 ### 5.3第三階段：其他嘗試
 #### 分支一：更換Q-Learning
