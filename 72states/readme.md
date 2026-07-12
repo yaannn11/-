@@ -3,32 +3,31 @@
 Evolutionary Sampling Agent (ESA) 的延伸。
 
 原本 ESA 使用 Q-learning Agent 來選擇不同的 surrogate-based optimization operators，
-但原始版本的 state representation 較簡化，且 reward 僅依據是否找到更佳解判斷。
-目的是要改善原始 ESA 中 Q-learning Agent 的狀態表示與獎勵機制，使 Agent 可以根據更完整的搜尋資訊進行操作選擇。
+但原始版本的 state representation 比較簡化，而且 reward 只根據是否有找到更佳解判斷。
+這個延伸的主要目的是要改善原始 ESA 中 Q-learning Agent 的狀態表示和獎勵機制，讓 Agent 可以根據更完整的搜尋資訊進行操作選擇。
 
-提出兩項延伸：
+所以提出兩項延伸：
 1. Adaptive State Representation
 2. Continuous Improvement Reward
-讓 Q-learning agent 能更精確地判斷目前搜尋狀態，並學習不同搜尋策略在不同階段的適用性。
+讓 Q-learning agent 可以更精確地判斷目前搜尋狀態，並學習不同搜尋策略在不同階段的適用性。
 
 ---
 
 # Original ESA Design
-
-原始 ESA 使用：
+原本 ESA 使用：
 - 4 個 optimization actions
 - 8 個 states
 - Binary reward
   
 Reward:
 reward = 1.0 if fitness improved else 0.0
-只能判斷「是否改善」，無法反映改善幅度。
+只能判斷「是否改善」，無法反映改善的幅度。
 
 例如：
 100 → 90
 以及
 100 → 99.99
-兩者皆被視為相同 reward，所以 agent 無法區分不同 action 帶來的改善程度。
+兩者會被視為相同 reward，所以 agent 無法區分不同 action 帶來的改善程度。
 
 ---
 
@@ -38,12 +37,11 @@ reward = 1.0 if fitness improved else 0.0
 原始 ESA：
 8 states
 
-延伸版本加入更多搜尋資訊：
+延伸加入更多搜尋資訊：
 State consists of:
 1. Search stage
 2. Improvement level
 3. Success status
-4. Selected action
 
 State size:
 4 actions × 3 search stages × 3 improvement levels × 2 success states = 72 states
@@ -53,7 +51,6 @@ State size:
 
 使用 function evaluation ratio:
 progress = nfe / max_nfe
-
 
 將搜尋過程分成：
 | Stage | Condition |
@@ -78,8 +75,7 @@ progress = nfe / max_nfe
 
 
 改善率:
-improvement_rate =
-(best_y_before - best_y)/(abs(best_y_before)+epsilon)
+improvement = best_y_before - self.best_y
 
 ---
 
@@ -89,7 +85,7 @@ improvement_rate =
 reward:0 or 1
 
 延伸版本:
-reward:(best_y_before - best_y)/(abs(best_y_before)+epsilon)
+reward = improvement / (abs(best_y_before)+1e-12)
 並限制：-1 <= reward <= 1
 
 優點：
@@ -97,16 +93,15 @@ reward:(best_y_before - best_y)/(abs(best_y_before)+epsilon)
 - 小幅改善給予較低 reward
 - 失敗或退化提供負向 feedback
 
-使 Q-learning 可以更細緻地評估 action 效果。
+讓 Q-learning 可以更細緻地評估 action 效果。
 
 ---
 
 # 3. Adaptive Temperature
 
-另外加入 temperature adjustment。
-
+加入 temperature adjustment。
 原本 Q-learning 使用固定 exploration rate。
-延伸版本根據近期改善情況調整 temperature：
+延伸版本是根據近期改善情況調整 temperature：
 - 搜尋停滯時增加 exploration
 - 持續改善時增加 exploitation
 
@@ -143,7 +138,7 @@ Evaluation:
 ## Low Dimension (30D / 50D)
 在低維度函數測試中，72-state 狀態表示方式相較於原始簡化狀態表示具有較好的搜尋資訊表達能力。
 
-原始 ESA 使用較少的狀態數量，Agent 只能根據有限的搜尋狀態進行決策；此延伸將搜尋狀態細分，使 Q-learning Agent 能夠辨識更多不同的搜尋情境，例如：
+原本的 ESA 使用較少的狀態數量，Agent 只能根據有限的搜尋狀態進行決策；此延伸將搜尋狀態細分，讓Q-learning Agent 可以夠辨識更多不同的搜尋情境，例如：
 - 目前搜尋階段 (Early / Middle / Late)
 - 最近改善程度 (Improvement Rate)
 - 搜尋成功與否 (Success / Failure)
