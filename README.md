@@ -83,15 +83,19 @@ d_i為核矩陣求逆後的對角線數值（Diagonal elements of the inverse ke
 本方法主要包含兩項改進：
 * **Adaptive State Representation**
   將原始 ESA 的 8-state 擴展為 72-state，加入：
+  
   - Search Stage：Early / Middle / Late
   - Improvement Level：No / Small / Large improvement
   - Success Status：Success / Failure
+  
   讓 Agent 能辨識不同搜尋階段與改善程度，學習更適合的 operator selection 策略。
 * **Continuous Improvement Reward**
   將原始 Binary Reward：
-  `reward = 1 if fitness improved else 0`
+   `reward = 1 if fitness improved else 0`
+  
   改為基於改善比例的連續 reward：
   `reward = improvement / (abs(best_y_before)+1e-12)`
+  
   並限制 reward 範圍於 [-1,1]，使 Agent 能區分不同程度的改善效果。
 
 3. 自適應執行流程與驗證 (Evaluation)
