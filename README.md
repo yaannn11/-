@@ -274,7 +274,7 @@ SUMMARY STATISTICS MATRIX
 
 
 
-### 5.4終版
+### 5.4 終版
 SUMMARY STATISTICS MATRIX
 | Function | Best | Worst | Mean | Std Dev |
 | :--- | :---: | :---: | :---: | :---: |
