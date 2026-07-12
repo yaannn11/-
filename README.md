@@ -155,6 +155,8 @@ graph TD
 * RBF 預測誤差
 * Convergence history
 
+*結果fitness進步約2-3個數量級，推測其原因可能在於Cubic核函數不像高斯核會隨距離增加而呈指數級衰減，它在處理不精細、大範圍的全域景觀時可能因此有更好的數值穩定性，而動態預測下限及在選取訓練點時的篩選機制則是讓矩陣計算出來的參數不會過於極端。
+
 SUMMARY STATISTICS MATRIX
 | Function | Best | Worst | Mean | Std Dev |
 | :--- | :---: | :---: | :---: | :---: |
@@ -185,6 +187,7 @@ SUMMARY STATISTICS MATRIX
 #### 分支1:
 * 結果與推論：整體Fitness反而惡化。推測這可能是因為a2雖然不能直接找到更好的點，但是採樣過程促成了的狀態轉移、樣本空間擴增，有助於其他策略找到最佳解。 
 SUMMARY STATISTICS MATRIX
+
 | Function | Best | Worst | Mean | Std Dev |
 | :--- | :---: | :---: | :---: | :---: |
 | Ellipsoid | 4.277050e-03 | 5.549932e-02 | 1.554553e-02 | 2.001028e-02 |
@@ -206,6 +209,7 @@ SUMMARY STATISTICS MATRIX
 #### 分支2:
 * 結果：a2 的成功率順利回升，雖然最終 Fitness 未直接提升，但代理模型的整體預測誤差有所下降。 
 SUMMARY STATISTICS MATRIX
+
 | Function | Best | Worst | Mean | Std Dev |
 | :--- | :---: | :---: | :---: | :---: |
 | Ellipsoid | 2.080207e-03 | 8.932726e-03 | 5.609240e-03 | 2.257009e-03 |
@@ -227,6 +231,7 @@ SUMMARY STATISTICS MATRIX
 #### 分支一：更換Q-Learning
 * 結果與推論：實驗顯示 CMAB 的最終 Fitness 表現比 Q-Learning差。推論可能是因為CMAB 機制較為短視，傾向追求即時回饋；而 Q-Learning 能透過狀態轉移機制進行更多探索，選擇當下回報低、但未來潛力更高或能轉移至優勢狀態的策略。 
 SUMMARY STATISTICS MATRIX
+
 | Function | Best | Worst | Mean | Std Dev |
 | :--- | :---: | :---: | :---: | :---: |
 | Ellipsoid | 6.670062e-03 | 1.059794e+00 | 2.352557e-01 | 4.128725e-01 |
@@ -249,6 +254,7 @@ SUMMARY STATISTICS MATRIX
 #### 分支二：融合策略
 * 結果與推論：Fitness 並未優化。推測可能是因為在有限的nfe下，增加策略數量與對應狀態會擴張Q-table的決策空間，使得代理人難以或較晚在資源耗盡前學會有效的策略切換邏輯。
 SUMMARY STATISTICS MATRIX
+
 | Function | Best | Worst | Mean | Std Dev |
 | :--- | :---: | :---: | :---: | :---: |
 | Ellipsoid | 4.611535e-03 | 2.003572e-02 | 8.697136e-03 | 5.707746e-03 |
