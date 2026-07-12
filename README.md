@@ -155,7 +155,7 @@ graph TD
 * RBF 預測誤差
 * Convergence history
 
-*結果fitness進步約2-3個數量級，推測其原因可能在於Cubic核函數不像高斯核會隨距離增加而呈指數級衰減，它在處理不精細、大範圍的全域景觀時可能因此有更好的數值穩定性，而動態預測下限及在選取訓練點時的篩選機制則是讓矩陣計算出來的參數不會過於極端。
+* 結果fitness進步約2-3個數量級，推測其原因可能在於Cubic核函數不像高斯核會隨距離增加而呈指數級衰減，它在處理不精細、大範圍的全域景觀時可能因此有更好的數值穩定性，而動態預測下限及在選取訓練點時的篩選機制則是讓矩陣計算出來的參數不會過於極端。
 
 SUMMARY STATISTICS MATRIX
 | Function | Best | Worst | Mean | Std Dev |
@@ -184,7 +184,7 @@ SUMMARY STATISTICS MATRIX
 * Action 成功率
 * Kernel 預測誤差
 
-#### 分支1:
+#### 分支一:
 * 結果與推論：整體Fitness反而惡化。推測這可能是因為a2雖然不能直接找到更好的點，但是採樣過程促成了的狀態轉移、樣本空間擴增，有助於其他策略找到最佳解。 
 SUMMARY STATISTICS MATRIX
 
@@ -206,7 +206,7 @@ SUMMARY STATISTICS MATRIX
 <img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/42f4667a-5221-473d-b331-33a4f6f161b0" />
 
 
-#### 分支2:
+#### 分支二:
 * 結果：a2 的成功率順利回升，雖然最終 Fitness 未直接提升，但代理模型的整體預測誤差有所下降。 
 SUMMARY STATISTICS MATRIX
 
