@@ -82,6 +82,7 @@ d_i為核矩陣求逆後的對角線數值（Diagonal elements of the inverse ke
 2. 研究方法 (Methodology)
 本方法主要包含兩項改進：
 * **Adaptive State Representation**
+
   將原始 ESA 的 8-state 擴展為 72-state，加入：
   
   - Search Stage：Early / Middle / Late
@@ -90,6 +91,7 @@ d_i為核矩陣求逆後的對角線數值（Diagonal elements of the inverse ke
   
   讓 Agent 能辨識不同搜尋階段與改善程度，學習更適合的 operator selection 策略。
 * **Continuous Improvement Reward**
+
   將原始 Binary Reward：
    `reward = 1 if fitness improved else 0`
   
