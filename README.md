@@ -59,7 +59,7 @@ Q-learning 以八個狀態表示「上一個動作為哪一種策略」以及「
 * 結果與推論：Fitness 並未優化。推測可能是因為在有限的nfe下，增加策略數量與對應狀態會擴張Q-table的決策空間，使得代理人難以或較晚在資源耗盡前學會有效的策略切換邏輯
 
 # 四、延伸內容
-* 延伸研究1：基於Rippa方法的自適應核心選擇 (Adaptive Kernel Selection)
+## 延伸研究1：基於Rippa方法的自適應核心選擇 (Adaptive Kernel Selection)
 1. 研究動機與背景 (Motivation)
 在傳統的代理模型（Surrogate Model）或核函數方法中，選擇最適合的核函數（如 Cubic 或 Gaussian）通常需要耗費大量的計算資源進行交叉驗證與重新訓練。本延伸研究旨在引入 Rippa 方法，在完全不需要重新訓練模型的前提下，實現一瞬間評估多種核函數對各個資料點的預測誤差，進而達到自適應核心（Adaptive Kernel）的動態優化。
 2. 理論與研究方法 (Methodology)本方法核心基於 Leave-One-Out 交叉驗證（LOOCV）的誤差估計公式。當原始模型的核矩陣求逆後的對角線數值已知時，第i個資料點在特定核函數下的LOOCV預測誤差e_i可以透過以下公式一瞬間計算完成：
@@ -74,11 +74,11 @@ d_i為核矩陣求逆後的對角線數值（Diagonal elements of the inverse ke
 若<img width="290" height="54" alt="image" src="https://github.com/user-attachments/assets/7eaecf70-2dfa-4c03-9c0e-6247f4e100bf" /> 則該點動態採用 Cubic核心。反之，則採用Gaussian核心。
 * 多維度驗證：此自動化演算法已分別在30dim與50dim的實驗數據上完成獨立驗證。
 
-* 延伸研究2:
-  1. 研究動機與背景 (Motivation)
+## 延伸研究2:
+1. 研究動機與背景 (Motivation)
 ESA 中 Q-learning Agent 負責選擇不同搜尋策略，但傳統設定通常使用固定探索率，無法最佳化進程調整搜尋行為。本延伸提出依據搜尋狀態動態調整 Exploration 與 Exploitation 比例的方法。
 
-  2. 理論與研究方法 (Methodology)
+2. 理論與研究方法 (Methodology)
 利用 Improvement Rate 與 NFE (Number of Function Evaluations) 建立搜尋狀態判斷：
 - 高改善率：增加 Exploration，尋找更多可能解。
 - 低改善率：增加 Exploitation，加強局部搜尋。
