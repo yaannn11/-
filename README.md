@@ -302,6 +302,15 @@ SUMMARY STATISTICS MATRIX
 | RHC2 | 1.055342e+03 | 1.173545e+03 | 1.102110e+03 | 4.505245e+01 |
 <img width="800" height="480" alt="image" src="https://github.com/user-attachments/assets/c75b242c-8f92-479a-b9e9-b10270f9e86e" />
 
+<img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/e18a4fd9-c21f-442b-b233-ef62745f0aa2" />
+<img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/2a482046-3c1a-4780-97d6-eea842f865b1" />
+<img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/f12d33ac-4b97-41be-9374-e5ebb173d20a" />
+<img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/1859c0b4-bafa-4c53-80d2-3e5c7782956c" />
+<img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/56a3eb18-3d33-45e9-be9c-a8edfb4d7750" />
+<img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/aad01b50-ce35-4299-9231-658aa5ce0ca3" />
+<img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/630c5fef-4dc5-4111-8026-709dab0f41a5" />
+
+
 ## 100維實驗結果(終版)
 SUMMARY STATISTICS MATRIX
 | Function | Best | Worst | Mean | Std Dev |
@@ -315,8 +324,13 @@ SUMMARY STATISTICS MATRIX
 | RHC2 | 1.460853e+02 | 1.533317e+02 | 1.496832e+02 | 2.648687e+00 |
 <img width="800" height="480" alt="image" src="https://github.com/user-attachments/assets/cee3b968-8f4e-47ab-abc2-01964c89ba61" />
 
-<img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/ec91aded-c835-4e30-ba8b-f7b565f69c3b" />
 <img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/9a3d4145-0f54-417e-900f-60a82c4e2c01" />
+<img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/63721ccf-203b-4c1e-82bc-7c50e460488f" />
+<img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/c9e03d80-6375-4ea9-966a-f930f7b659f6" />
+<img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/5daab6d6-fc9b-4831-8874-411908a7b553" />
+<img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/461cee62-04b2-4167-ad35-8a2099d1e530" />
+<img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/1366998e-edc3-4414-a8b0-7f1f04ac2f1a" />
+<img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/1b6e759d-d068-4318-8a5d-32eae12cc053" />
 
 ---
 ## 執行
