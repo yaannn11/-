@@ -74,5 +74,18 @@ d_i為核矩陣求逆後的對角線數值（Diagonal elements of the inverse ke
 若<img width="290" height="54" alt="image" src="https://github.com/user-attachments/assets/7eaecf70-2dfa-4c03-9c0e-6247f4e100bf" /> 則該點動態採用 Cubic核心。反之，則採用Gaussian核心。
 * 多維度驗證：此自動化演算法已分別在30dim與50dim的實驗數據上完成獨立驗證。
 
-*延伸研究2:
+* 延伸研究2:
+  1. 研究動機與背景 (Motivation)
+ESA 中 Q-learning Agent 負責選擇不同搜尋策略，但傳統設定通常使用固定探索率，無法最佳化進程調整搜尋行為。本延伸提出依據搜尋狀態動態調整 Exploration 與 Exploitation 比例的方法。
+
+  2. 理論與研究方法 (Methodology)
+利用 Improvement Rate 與 NFE (Number of Function Evaluations) 建立搜尋狀態判斷：
+- 高改善率：增加 Exploration，尋找更多可能解。
+- 低改善率：增加 Exploitation，加強局部搜尋。
+Agent 透過 Q-learning 更新策略價值，使 Action Selection 能隨搜尋歷程自動調整。
+
+  3. 自動化執行流程
+* 狀態評估：計算每輪最佳解改善率。
+* 策略調整：根據搜尋階段動態改變 Action 選擇傾向。
+* 多維度驗證：於30dim、50dim與100dim測試函數進行效能比較。
 
