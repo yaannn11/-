@@ -313,7 +313,14 @@ SUMMARY STATISTICS MATRIX
 <img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/9a3d4145-0f54-417e-900f-60a82c4e2c01" />
 
 ---
+## 執行
 
+### 檢查與安裝相依套件
+本延伸實驗除基礎數學與繪圖模組（Numpy, Matplotlib）外，核心測試函數依賴 `opfunu` 基準測試套件。執行前請確保已切換至相應環境並安裝：
+```bash
+pip install opfunu
+```
+---
 #  專案開發與實作聲明
 本專案之核心目標為實作論文 **《Evolutionary Sampling Agent for Expensive Problems》** 之算法主架構，並在此基礎上增加相關延伸機制。本專案之理論研究、演算法邏輯架構與延伸模組均由人類團隊主導，並採用「人類主導、AI 執行」之監督式協同開發模式。
 
