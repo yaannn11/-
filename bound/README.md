@@ -36,6 +36,7 @@ graph TD
     style A fill:#f9f,stroke:#333,stroke-width:2px
     style D fill:#bbf,stroke:#333,stroke-width:2px
     style F fill:#ff9,stroke:#333,stroke-width:2px
+```mermaid
 
 ### 1. 計算雙向動態邊界 (步驟一)
 在每一次迭代開始時，演算法會先計算目前資料庫中所有已知真實數據的標準差（sigma），並找出當前真實數據的最低 Fitness  作為基底。利用倍數參數 k定義合理區間：
@@ -84,7 +85,7 @@ graph TD
 ### i. 動態容忍區間運作示意
 本機制的雙向動態邊界實際執行狀況如下圖（以 Ackley 函數 Seed 10 , SRR 函數 Seed 10 為例)。可以觀測到邊界隨著數據標準差的改變進行動態縮放，並攔截了越界的無效預測：
 
-![動態雙向邊界邊界變化示意](./plots/Ackley_seed10_safety_dual_bound.jpg)
+![動態雙向邊界邊界變化示意](./plots/Ackley_seed10_safety_dual_bound.png)
 ![動態雙向邊界邊界變化示意](./plots/SRR_seed10_safety_dual_bound.png)
 
 *(註：其餘各函數的完整收斂歷程圖，請參見 [plots/convergence/](./plots/convergence/) 資料夾)*
