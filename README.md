@@ -213,11 +213,11 @@ SUMMARY STATISTICS MATRIX
 | RHC1 | 2.144357e+02 | 4.447704e+02 | 3.161504e+02 | 8.124374e+01 |
 | RHC2 | 9.159692e+02 | 9.251510e+02 | 9.194437e+02 | 3.335801e+00 |
 
-<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/c762e051-5ca2-4e40-9ded-a1a5d42bdd79" />
+<img width="1000" height="600" alt="image" src="https://github.com/user-attachments/assets/c762e051-5ca2-4e40-9ded-a1a5d42bdd79" />
 
-<img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/b16cf1d3-518a-4a39-9745-40c02aa5f6c2" />
-<img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/235010eb-00f7-4490-bbea-c1e7f2d5f514" />
-<img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/9a9b98f6-9f98-4fab-a057-058e259befd6" />
+<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/b16cf1d3-518a-4a39-9745-40c02aa5f6c2" />
+<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/235010eb-00f7-4490-bbea-c1e7f2d5f514" />
+<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/9a9b98f6-9f98-4fab-a057-058e259befd6" />
 
 ### 5.3第三階段：其他嘗試
 #### 分支一：更換Q-Learning
@@ -232,6 +232,13 @@ SUMMARY STATISTICS MATRIX
 | RHC1 | 2.242905e+02 | 5.254416e+02 | 3.114634e+02 | 1.084116e+02 |
 | RHC2 | 9.143472e+02 | 9.451815e+02 | 9.238585e+02 | 1.101254e+01 |
 
+<img width="1000" height="600" alt="image" src="https://github.com/user-attachments/assets/0ef0d6e1-bf45-43c1-b94a-8c64393412c8" />
+
+<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/13ee0eea-2ddd-44ca-8dc6-9d3ee71964a3" />
+<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/9f10fa1e-8c84-451f-9099-9817c2162c7d" />
+<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/553f50d1-4acd-4a94-a9d9-c30c5bc504f2" />
+
+
 #### 分支二：融合策略
 SUMMARY STATISTICS MATRIX
 | Function | Best | Worst | Mean | Std Dev |
@@ -243,6 +250,15 @@ SUMMARY STATISTICS MATRIX
 | SRR | -2.421654e+02 | -3.997124e+01 | -1.846304e+02 | 7.432425e+01 |
 | RHC1 | 2.148707e+02 | 6.371653e+02 | 3.461564e+02 | 1.511865e+02 |
 | RHC2 | 9.129259e+02 | 9.245724e+02 | 9.181666e+02 | 3.764006e+00 |
+
+<img width="1000" height="600" alt="image" src="https://github.com/user-attachments/assets/1c780080-570a-413d-95fb-b07195bc3b1b" />
+
+<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/b6fe7c96-e61e-48c3-9218-9f063709d963" />
+<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/59144855-c5f0-4449-8b76-972e352400bb" />
+<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/cbc0817d-e8cb-45c7-936a-b4c0dfd5459b" />
+<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/d4b56072-765c-47a9-9877-cb55d3814da8" />
+
+
 
 ### 5.4終版
 SUMMARY STATISTICS MATRIX
