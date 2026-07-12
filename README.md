@@ -285,7 +285,16 @@ SUMMARY STATISTICS MATRIX
 | SRR | -2.362454e+02 | -5.090273e+01 | -1.268907e+02 | 6.933218e+01 |
 | RHC1 | 2.149206e+02 | 5.222809e+02 | 3.363790e+02 | 1.149951e+02 |
 | RHC2 | 9.126642e+02 | 9.206502e+02 | 9.162500e+02 | 2.669143e+00 |
-<img width="800" height="480" alt="image" src="https://github.com/user-attachments/assets/02ceae3a-9a45-4802-8fec-b22a568d9e94" />
+<img width="800" height="480" alt="image" src="https://github.com/user-attachments/assets/2902fdc2-84dc-4f1c-ab12-5a93ac3655c0" />
+
+<img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/5768477b-0192-4864-b5f1-479b6eb13628" />
+<img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/033c5bd3-d108-40ab-90bc-16410814a7f0" />
+<img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/a1d1bcf7-69ca-460d-bcaa-3dec804b34cc" />
+<img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/6f5a50fc-fdb5-4bd6-bcab-9b9e1342fc0c" />
+<img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/5d8a1d01-dc59-4b56-af92-a72bdf465762" />
+<img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/bb499dee-cecf-4d27-8c52-e9460f7984bd" />
+<img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/90fdf105-a180-420b-9b42-79f68a2417ff" />
+
 
 
 
