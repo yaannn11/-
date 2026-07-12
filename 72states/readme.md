@@ -1,15 +1,14 @@
 # ESA Extension: Adaptive State Representation and Reward Design
 
-此檔案為 Evolutionary Sampling Agent (ESA) 的延伸版本。
+Evolutionary Sampling Agent (ESA) 的延伸。
 
-原始 ESA 使用 Q-learning Agent 來選擇不同的 surrogate-based optimization operators，
+原本 ESA 使用 Q-learning Agent 來選擇不同的 surrogate-based optimization operators，
 但原始版本的 state representation 較簡化，且 reward 僅依據是否找到更佳解判斷。
+目的是要改善原始 ESA 中 Q-learning Agent 的狀態表示與獎勵機制，使 Agent 可以根據更完整的搜尋資訊進行操作選擇。
 
-本研究提出兩項延伸：
-
+提出兩項延伸：
 1. Adaptive State Representation
 2. Continuous Improvement Reward
-
 讓 Q-learning agent 能更精確地判斷目前搜尋狀態，並學習不同搜尋策略在不同階段的適用性。
 
 ---
@@ -20,54 +19,43 @@
 - 4 個 optimization actions
 - 8 個 states
 - Binary reward
-- 
+  
 Reward:
 reward = 1.0 if fitness improved else 0.0
-只能判斷「是否改善」，
-無法反映改善幅度。
+只能判斷「是否改善」，無法反映改善幅度。
 
 例如：
-
 100 → 90
 以及
 100 → 99.99
-
-兩者皆被視為相同 reward。
-所以 agent 無法區分不同 action 帶來的改善程度。
+兩者皆被視為相同 reward，所以 agent 無法區分不同 action 帶來的改善程度。
 
 ---
 
 # Proposed Extension
-
 ## 1. 72-State Representation
 
 原始 ESA：
 8 states
 
 延伸版本加入更多搜尋資訊：
-
 State consists of:
-
 1. Search stage
 2. Improvement level
 3. Success status
 4. Selected action
 
-
 State size:
-
 4 actions × 3 search stages × 3 improvement levels × 2 success states = 72 states
 
 ---
 ## Search Stage
 
 使用 function evaluation ratio:
-
 progress = nfe / max_nfe
 
 
 將搜尋過程分成：
-
 | Stage | Condition |
 |-|-|
 | Early | progress < 0.33 |
@@ -100,12 +88,9 @@ improvement_rate =
 原始 ESA:
 reward:0 or 1
 
-
 延伸版本:
 reward:(best_y_before - best_y)/(abs(best_y_before)+epsilon)
-並限制：
--1 <= reward <= 1
-
+並限制：-1 <= reward <= 1
 
 優點：
 - 大幅改善給予較高 reward
@@ -120,20 +105,15 @@ reward:(best_y_before - best_y)/(abs(best_y_before)+epsilon)
 
 另外加入 temperature adjustment。
 
-原始 Q-learning 使用固定 exploration rate。
-
+原本 Q-learning 使用固定 exploration rate。
 延伸版本根據近期改善情況調整 temperature：
 - 搜尋停滯時增加 exploration
 - 持續改善時增加 exploitation
 
-
 目的：
 避免過早收斂到單一 action。
 
----
-
 # Experimental Setup
-
 Benchmark Functions:
 - Ellipsoid
 - Rosenbrock
@@ -158,45 +138,40 @@ Evaluation:
 - Best fitness
 - Mean fitness
 - Standard deviation
-
 ---
-
 # Experimental Results
-
 ## Low Dimension (30D / 50D)
+在低維度函數測試中，72-state 狀態表示方式相較於原始簡化狀態表示具有較好的搜尋資訊表達能力。
 
-72-state representation provides richer search information.
+原始 ESA 使用較少的狀態數量，Agent 只能根據有限的搜尋狀態進行決策；此延伸將搜尋狀態細分，使 Q-learning Agent 能夠辨識更多不同的搜尋情境，例如：
+- 目前搜尋階段 (Early / Middle / Late)
+- 最近改善程度 (Improvement Rate)
+- 搜尋成功與否 (Success / Failure)
 
-Compared with original simplified state representation,
-the agent can distinguish different search situations and select operators more effectively.
-
----
+透過更細緻的狀態空間，Agent 能更有效判斷不同階段下適合使用的搜尋策略，提升操作選擇能力。
 
 ## High Dimension (100D)
+在 100 維度測試中，相較於低維度問題，整體最佳化效果明顯下降。
+可能原因如下：
 
-Performance decreases compared with lower dimensions.
+1. **固定的函數評估次數不足**
+   隨著維度增加，搜尋空間快速擴大，但 NFE (Number of Function Evaluations) 仍維持固定，使 Agent 能探索的範圍受到限制。
 
-Possible reasons:
+2. **初始採樣數量不足**
+   ESA 主要依賴初始樣本建立 RBF surrogate model。
+   在高維度空間中，原本固定數量的初始樣本難以充分覆蓋整個搜尋空間，導致代理模型建立困難。
 
-1. Fixed evaluation budget becomes insufficient.
-2. Initial sampling size is limited.
-3. RBF surrogate becomes harder to approximate in high-dimensional space.
-4. Search space grows exponentially with dimension.
+3. **RBF surrogate model 建模困難**
+   維度增加後，資料點之間的距離增加，RBF 模型比較難準確估計高維度函數特徵，使預測誤差增加。
 
-Future improvement:
-
-- Increase initialization samples
-- Adaptive surrogate model selection
-- Dimension-aware parameter adjustment
-
+4. **高維度搜尋空間複雜度提升**
+   隨著維度增加，可能解空間呈指數成長，使探索與開發 (Exploration-Exploitation) 的平衡更加困難。
 
 ---
 
 # Conclusion
+原始 ESA 使用 8-state 狀態表示，本研究將其擴展為 72-state 狀態空間，使 Agent 能夠考慮更多搜尋環境資訊，包括搜尋階段、改善程度以及搜尋成功狀態。
 
-This extension improves ESA's decision mechanism by extending the original 8-state Q-learning model into a 72-state adaptive representation.
-
-By combining continuous reward feedback and adaptive exploration control,
-the agent can better evaluate operator effectiveness under different optimization stages.
-
-The proposed method focuses on improving ESA's decision-making capability rather than modifying the optimization operators themselves.
+讓 Agent 不僅能判斷是否改善，也能根據改善幅度評估不同操作策略的有效性。
+透過更完整的狀態資訊與 reward 設計，Agent 可以更精確的學習不同搜尋階段下的最佳操作選擇。
+本研究延伸方向主要著重於提升 ESA 的決策能力
