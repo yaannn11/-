@@ -74,3 +74,5 @@ d_i為核矩陣求逆後的對角線數值（Diagonal elements of the inverse ke
 若<img width="290" height="54" alt="image" src="https://github.com/user-attachments/assets/7eaecf70-2dfa-4c03-9c0e-6247f4e100bf" /> 則該點動態採用 Cubic核心。反之，則採用Gaussian核心。
 * 多維度驗證：此自動化演算法已分別在30dim與50dim的實驗數據上完成獨立驗證。
 
+*延伸研究2:
+
