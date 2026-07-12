@@ -113,3 +113,13 @@ d_i為核矩陣求逆後的對角線數值（Diagonal elements of the inverse ke
 * 策略學習：Q-learning 根據連續 reward 調整不同 operator 的選擇機率。
 * 多維度驗證：於 Ellipsoid、Rosenbrock、Ackley、Griewank、SRR、RHC1、RHC2 等基準函數上，分別於 30dim、50dim 與100dim 進行測試。
 
+---
+
+# 五、實驗數據
+
+
+
+---
+
+# 六、實驗結果圖表比較
+
