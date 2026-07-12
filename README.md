@@ -60,7 +60,7 @@ Q-learning 以八個狀態表示「上一個動作為哪一種策略」以及「
 
 ### 分支二：融合策略
 * 嘗試：嘗試將全域探索 (a1) 與局部細搜 (a2) 整合為單一動作a5，先以a1找到比較好的區域後再以a2找該區比較好的點，最後進行真實評估，期望能減少消耗nfe。
-* 結果與推論：Fitness 並未優化。推測可能是因為在有限的nfe下，增加策略數量與對應狀態會擴張Q-table的決策空間，使得代理人難以或較晚在資源耗盡前學會有效的策略切換邏輯
+* 結果與推論：Fitness 並未優化。推測可能是因為在有限的nfe下，增加策略數量與對應狀態會擴張Q-table的決策空間，使得代理人難以或較晚在資源耗盡前學會有效的策略切換邏輯。
 
 ---
 
@@ -183,6 +183,7 @@ SUMMARY STATISTICS MATRIX
 * Kernel 預測誤差
 
 #### 分支1:
+* 結果與推論：整體Fitness反而惡化。推測這可能是因為a2雖然不能直接找到更好的點，但是採樣過程促成了的狀態轉移、樣本空間擴增，有助於其他策略找到最佳解。 
 SUMMARY STATISTICS MATRIX
 | Function | Best | Worst | Mean | Std Dev |
 | :--- | :---: | :---: | :---: | :---: |
@@ -203,6 +204,7 @@ SUMMARY STATISTICS MATRIX
 
 
 #### 分支2:
+* 結果：a2 的成功率順利回升，雖然最終 Fitness 未直接提升，但代理模型的整體預測誤差有所下降。 
 SUMMARY STATISTICS MATRIX
 | Function | Best | Worst | Mean | Std Dev |
 | :--- | :---: | :---: | :---: | :---: |
@@ -223,6 +225,7 @@ SUMMARY STATISTICS MATRIX
 
 ### 5.3第三階段：其他嘗試
 #### 分支一：更換Q-Learning
+* 結果與推論：實驗顯示 CMAB 的最終 Fitness 表現比 Q-Learning差。推論可能是因為CMAB 機制較為短視，傾向追求即時回饋；而 Q-Learning 能透過狀態轉移機制進行更多探索，選擇當下回報低、但未來潛力更高或能轉移至優勢狀態的策略。 
 SUMMARY STATISTICS MATRIX
 | Function | Best | Worst | Mean | Std Dev |
 | :--- | :---: | :---: | :---: | :---: |
@@ -244,6 +247,7 @@ SUMMARY STATISTICS MATRIX
 
 
 #### 分支二：融合策略
+* 結果與推論：Fitness 並未優化。推測可能是因為在有限的nfe下，增加策略數量與對應狀態會擴張Q-table的決策空間，使得代理人難以或較晚在資源耗盡前學會有效的策略切換邏輯。
 SUMMARY STATISTICS MATRIX
 | Function | Best | Worst | Mean | Std Dev |
 | :--- | :---: | :---: | :---: | :---: |
