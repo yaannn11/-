@@ -170,7 +170,7 @@ Evaluation:
 透過更完整的狀態資訊與 reward 設計，Agent 可以更精確的學習不同搜尋階段下的最佳操作選擇。
 此延伸主要著重於提升 ESA 的決策能力
 
-# Experimental Results
+## Experimental Results
 
 以下為原始 ESA（Original ESA）與改良版 ESA（Proposed ESA）在各個測試函數（Benchmark Functions）上的表現對比（數值皆為 Mean ± Std，以尋找極小值為目標）：
 
