@@ -315,8 +315,8 @@ SUMMARY STATISTICS MATRIX
 | RHC2 | 1.460853e+02 | 1.533317e+02 | 1.496832e+02 | 2.648687e+00 |
 <img width="800" height="480" alt="image" src="https://github.com/user-attachments/assets/cee3b968-8f4e-47ab-abc2-01964c89ba61" />
 
-<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/ec91aded-c835-4e30-ba8b-f7b565f69c3b" />
-<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/9a3d4145-0f54-417e-900f-60a82c4e2c01" />
+<img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/ec91aded-c835-4e30-ba8b-f7b565f69c3b" />
+<img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/9a3d4145-0f54-417e-900f-60a82c4e2c01" />
 
 ---
 ## 執行
