@@ -36,7 +36,8 @@ graph TD
     style A fill:#f9f,stroke:#333,stroke-width:2px
     style D fill:#bbf,stroke:#333,stroke-width:2px
     style F fill:#ff9,stroke:#333,stroke-width:2px
-```mermaid
+
+```
 
 ### 1. 計算雙向動態邊界 (步驟一)
 在每一次迭代開始時，演算法會先計算目前資料庫中所有已知真實數據的標準差（sigma），並找出當前真實數據的最低 Fitness  作為基底。利用倍數參數 k定義合理區間：
