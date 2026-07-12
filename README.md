@@ -168,7 +168,7 @@ SUMMARY STATISTICS MATRIX
 | RHC1 | 2.149206e+02 | 5.222809e+02 | 3.363790e+02 | 1.149951e+02 |
 | RHC2 | 9.126642e+02 | 9.206502e+02 | 9.162500e+02 | 2.669143e+00 |
 
-<img width="1000" height="600" alt="image" src="https://github.com/user-attachments/assets/bac36b4f-b5bc-459d-840e-4c60f2ee0fce" />
+<img width="800" height="480" alt="image" src="https://github.com/user-attachments/assets/bac36b4f-b5bc-459d-840e-4c60f2ee0fce" />
 
 <img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/af99304b-d271-4ef2-8e71-faf015fc6cc6" />
 <img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/baeed1c7-1a0c-4ca2-9c6b-48d771160eb0" />
@@ -198,7 +198,7 @@ SUMMARY STATISTICS MATRIX
 | RHC1 | 2.120482e+02 | 3.902936e+02 | 2.984559e+02 | 7.236709e+01 |
 | RHC2 | 9.140408e+02 | 9.215871e+02 | 9.171045e+02 | 2.978535e+00 |
 
-<img width="1000" height="600" alt="image" src="https://github.com/user-attachments/assets/e812ad9a-408d-4608-9ec1-cb4ab9366127" />
+<img width="800" height="480" alt="image" src="https://github.com/user-attachments/assets/e812ad9a-408d-4608-9ec1-cb4ab9366127" />
 
 <img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/79193af2-d990-4b9d-b7ad-26d0358a0df2" />
 <img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/7975ae81-a609-4df2-ad14-2e9a552da8f2" />
@@ -220,7 +220,7 @@ SUMMARY STATISTICS MATRIX
 | RHC1 | 2.144357e+02 | 4.447704e+02 | 3.161504e+02 | 8.124374e+01 |
 | RHC2 | 9.159692e+02 | 9.251510e+02 | 9.194437e+02 | 3.335801e+00 |
 
-<img width="1000" height="600" alt="image" src="https://github.com/user-attachments/assets/c762e051-5ca2-4e40-9ded-a1a5d42bdd79" />
+<img width="800" height="480" alt="image" src="https://github.com/user-attachments/assets/c762e051-5ca2-4e40-9ded-a1a5d42bdd79" />
 
 <img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/b16cf1d3-518a-4a39-9745-40c02aa5f6c2" />
 <img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/23c154ac-2f06-4e9b-9160-1952392c0c8e" />
@@ -242,7 +242,7 @@ SUMMARY STATISTICS MATRIX
 | RHC1 | 2.242905e+02 | 5.254416e+02 | 3.114634e+02 | 1.084116e+02 |
 | RHC2 | 9.143472e+02 | 9.451815e+02 | 9.238585e+02 | 1.101254e+01 |
 
-<img width="1000" height="600" alt="image" src="https://github.com/user-attachments/assets/0ef0d6e1-bf45-43c1-b94a-8c64393412c8" />
+<img width="800" height="480" alt="image" src="https://github.com/user-attachments/assets/0ef0d6e1-bf45-43c1-b94a-8c64393412c8" />
 
 <img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/13ee0eea-2ddd-44ca-8dc6-9d3ee71964a3" />
 <img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/9f10fa1e-8c84-451f-9099-9817c2162c7d" />
@@ -265,7 +265,7 @@ SUMMARY STATISTICS MATRIX
 | RHC1 | 2.148707e+02 | 6.371653e+02 | 3.461564e+02 | 1.511865e+02 |
 | RHC2 | 9.129259e+02 | 9.245724e+02 | 9.181666e+02 | 3.764006e+00 |
 
-<img width="1000" height="600" alt="image" src="https://github.com/user-attachments/assets/1c780080-570a-413d-95fb-b07195bc3b1b" />
+<img width="800" height="480" alt="image" src="https://github.com/user-attachments/assets/1c780080-570a-413d-95fb-b07195bc3b1b" />
 
 <img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/b6fe7c96-e61e-48c3-9218-9f063709d963" />
 <img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/59144855-c5f0-4449-8b76-972e352400bb" />
@@ -285,7 +285,7 @@ SUMMARY STATISTICS MATRIX
 | SRR | -2.362454e+02 | -5.090273e+01 | -1.268907e+02 | 6.933218e+01 |
 | RHC1 | 2.149206e+02 | 5.222809e+02 | 3.363790e+02 | 1.149951e+02 |
 | RHC2 | 9.126642e+02 | 9.206502e+02 | 9.162500e+02 | 2.669143e+00 |
-<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/02ceae3a-9a45-4802-8fec-b22a568d9e94" />
+<img width="800" height="480" alt="image" src="https://github.com/user-attachments/assets/02ceae3a-9a45-4802-8fec-b22a568d9e94" />
 
 
 
@@ -300,7 +300,7 @@ SUMMARY STATISTICS MATRIX
 | SRR | 2.046844e+02 | 2.810709e+02 | 2.341738e+02 | 2.731080e+01 |
 | RHC1 | 4.431538e+02 | 5.781589e+02 | 5.002263e+02 | 4.879833e+01 |
 | RHC2 | 1.055342e+03 | 1.173545e+03 | 1.102110e+03 | 4.505245e+01 |
-<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/c75b242c-8f92-479a-b9e9-b10270f9e86e" />
+<img width="800" height="480" alt="image" src="https://github.com/user-attachments/assets/c75b242c-8f92-479a-b9e9-b10270f9e86e" />
 
 ## 100維實驗結果(終版)
 SUMMARY STATISTICS MATRIX
@@ -313,10 +313,10 @@ SUMMARY STATISTICS MATRIX
 | SRR | 9.054557e+02 | 1.075647e+03 | 9.932388e+02 | 6.270935e+01 |
 | RHC1 | 2.537969e+02 | 2.624466e+02 | 2.575530e+02 | 3.013509e+00 |
 | RHC2 | 1.460853e+02 | 1.533317e+02 | 1.496832e+02 | 2.648687e+00 |
-<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/cee3b968-8f4e-47ab-abc2-01964c89ba61" />
+<img width="800" height="480" alt="image" src="https://github.com/user-attachments/assets/cee3b968-8f4e-47ab-abc2-01964c89ba61" />
 
-<img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/ec91aded-c835-4e30-ba8b-f7b565f69c3b" />
-<img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/9a3d4145-0f54-417e-900f-60a82c4e2c01" />
+<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/ec91aded-c835-4e30-ba8b-f7b565f69c3b" />
+<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/9a3d4145-0f54-417e-900f-60a82c4e2c01" />
 
 ---
 ## 執行
