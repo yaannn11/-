@@ -102,8 +102,9 @@ graph TD
 ### i. 動態容忍區間運作示意
 本機制的雙向動態邊界實際執行狀況如下圖（以 30 維的 Ackley 函數 Seed 10 , SRR 函數 Seed 10 為例)。可以觀測到邊界隨著數據標準差的改變進行動態縮放，並攔截了越界的無效預測：
 
-![動態雙向邊界邊界變化示意](./plots/Ackley_seed10_safety_dual_bound.png)
-![動態雙向邊界邊界變化示意](./plots/SRR_seed10_safety_dual_bound.png)
+![30 維 Ackley 函數 Seed 10 動態雙向邊界邊界變化示意](./plots/Ackley_seed10_safety_dual_bound.png)
+
+![30 維 SRR 函數 Seed 10 動態雙向邊界邊界變化示意](./plots/SRR_seed10_safety_dual_bound.png)
 
 *(註：其餘各函數的完整收斂歷程圖，請參見 [plots/convergence/](./plots/convergence/) 資料夾)*
 ## 結果與推論
