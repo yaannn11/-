@@ -171,4 +171,17 @@ Evaluation:
 透過更完整的狀態資訊與 reward 設計，Agent 可以更精確的學習不同搜尋階段下的最佳操作選擇。
 此延伸主要著重於提升 ESA 的決策能力
 
-![30維-72-state](https://github.com/yaannn11/-/blob/main/72states/30-72.png)
+## 實驗結果對比 (Experimental Results)
+
+以下為原始 ESA（Original ESA）與本研究提出的改良版 ESA（Proposed ESA）在各個測試函數（Benchmark Functions）上的表現對比（數值皆為 Mean ± Std，以尋找極小值為目標）：
+以30維為例:
+| Function | Original ESA (Mean ± Std) | Proposed ESA (Mean ± Std) | 較佳 (Better) |
+| :--- | :--- | :--- | :--- |
+| **Ellipsoid** | 6.474E-03 ± 5.641E-03 | 6.369E-03 ± 3.759E-03 | ✅ Proposed |
+| **Rosenbrock** | 2.853E+01 ± 7.267E-01 | 2.840E+01 ± 6.500E-01 | ✅ Proposed |
+| **Ackley** | 2.915E-01 ± 1.922E-01 | 1.292E-01 ± 9.760E-03 | ✅ Proposed |
+| **Griewank** | 5.737E-01 ± 2.048E-01 | 6.730E-01 ± 9.970E-02 | ✅ Original |
+| **SRR** | -1.269E+02 ± 6.933E+01 | -1.323E+02 ± 6.451E+01 | ✅ Proposed |
+| **RHC1** | 3.364E+02 ± 1.150E+02 | 3.496E+02 ± 1.063E+02 | ✅ Original |
+| **RHC2** | 9.163E+02 ± 2.669E+00 | 9.171E+02 ± 2.420E+00 | ✅ Original |
+實驗結果顯示:本延伸提出的改良版 ESA 展現出更優異的搜尋表現與泛化能力。在 Ackley 函數上，本方法不只將平均最佳解降低了約 55%，標準差更從 0.192 顯著降至 0.0098，證實在優化效率與搜尋穩定性上皆有大幅度的提升；同時，在 Ellipsoid 與 Rosenbrock 函數中，本方法在平均值和標準差上取得雙重改善，維持了高度的穩定搜尋品質。在 Griewank、RHC1 與 RHC2 等多峰或特定地形函數中，因為 Adaptive Temperature 機制動態調整了探索與利用的平衡，可能使演算法在有限的評估次數（NFE）內未能完全收斂，導致結果略遜於原始 ESA。
