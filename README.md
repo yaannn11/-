@@ -76,10 +76,12 @@ d_i為核矩陣求逆後的對角線數值（Diagonal elements of the inverse ke
 
 ## 延伸研究2：自適應狀態表示與連續獎勵設計 (Adaptive State Representation and Reward Design)
 1. 研究動機與背景 (Motivation)
+
 原始 ESA 使用 Q-learning Agent 選擇不同 surrogate-based optimization operators，但其 state representation 僅包含有限搜尋資訊，且 reward 只根據是否改善判斷，無法反映改善幅度與搜尋階段差異。
 本延伸研究旨在提升 Agent 的決策能力，透過更完整的狀態資訊與連續型 reward，使 Q-learning 能根據不同搜尋情境選擇更適合的最佳化策略。
 
 2. 研究方法 (Methodology)
+
 本方法主要包含兩項改進：
 * **Adaptive State Representation**
 
