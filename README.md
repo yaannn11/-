@@ -196,11 +196,9 @@ SUMMARY STATISTICS MATRIX
 
 <img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/e812ad9a-408d-4608-9ec1-cb4ab9366127" />
 
-
-<img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/4b5d5115-caad-46d1-8c37-98301523567d" />
 <img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/79193af2-d990-4b9d-b7ad-26d0358a0df2" />
 <img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/6f7381f6-8651-4d51-9eb1-a074cd77a321" />
-
+<img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/4b5d5115-caad-46d1-8c37-98301523567d" />
 
 
 #### 分支2:
