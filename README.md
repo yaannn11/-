@@ -187,8 +187,6 @@ SUMMARY STATISTICS MATRIX
 | RHC1 | 2.120482e+02 | 3.902936e+02 | 2.984559e+02 | 7.236709e+01 |
 | RHC2 | 9.140408e+02 | 9.215871e+02 | 9.171045e+02 | 2.978535e+00 |
 
-由圖片可以看出在使用a2的時候，reward大多都是0(第4格為action，第6格為reward)
-<img width="887" height="483" alt="image" src="https://github.com/user-attachments/assets/4673a6d4-b251-43b3-b2cf-adaca911bcbb" />
 
 #### 分支2:
 SUMMARY STATISTICS MATRIX
