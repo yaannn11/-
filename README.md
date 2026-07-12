@@ -168,9 +168,9 @@ SUMMARY STATISTICS MATRIX
 
 <img width="1000" height="600" alt="image" src="https://github.com/user-attachments/assets/bac36b4f-b5bc-459d-840e-4c60f2ee0fce" />
 
-<img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/af99304b-d271-4ef2-8e71-faf015fc6cc6" />
-<img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/baeed1c7-1a0c-4ca2-9c6b-48d771160eb0" />
-<img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/4ccb2cb5-d5ca-4513-8569-2cea5c6f5ca5" />
+<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/af99304b-d271-4ef2-8e71-faf015fc6cc6" />
+<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/baeed1c7-1a0c-4ca2-9c6b-48d771160eb0" />
+<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/4ccb2cb5-d5ca-4513-8569-2cea5c6f5ca5" />
 
 
 ### 5.2第二階段：改善a2策略成功率
@@ -196,9 +196,9 @@ SUMMARY STATISTICS MATRIX
 
 <img width="1000" height="600" alt="image" src="https://github.com/user-attachments/assets/e812ad9a-408d-4608-9ec1-cb4ab9366127" />
 
-<img width="350" height="210" alt="image" src="https://github.com/user-attachments/assets/79193af2-d990-4b9d-b7ad-26d0358a0df2" />
-<img width="350" height="210" alt="image" src="https://github.com/user-attachments/assets/4b5d5115-caad-46d1-8c37-98301523567d" />
-<img width="350" height="210" alt="image" src="https://github.com/user-attachments/assets/42f4667a-5221-473d-b331-33a4f6f161b0" />
+<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/79193af2-d990-4b9d-b7ad-26d0358a0df2" />
+<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/4b5d5115-caad-46d1-8c37-98301523567d" />
+<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/42f4667a-5221-473d-b331-33a4f6f161b0" />
 
 
 #### 分支2:
