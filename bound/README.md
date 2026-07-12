@@ -12,6 +12,12 @@
 * **核函數異質配置**：策略 a2, a4 選用 Gaussian 核，策略 a1, a3 則選用 Cubic 核。
 * **策略一動態預處理**：在 Z-score 標準化的基礎上，針對策略 a1 進行動態調整。在優化初期（NFE < 400）進行 Sign-Log 轉換以穩定全域架構；NFE >= 400 之後則回歸純 Z-score 以保留數據細節。
 
+## 執行入口
+請直接運行此檔案以啟動：
+```bash
+python run_experiments.py
+```
+
 ## 實作設計 (Implementation Details)
 
 在代理模型預測後與送入真實評估前加入一道主動攔截過濾網，具體執行步驟如下：
