@@ -13,6 +13,12 @@
 * **策略一動態預處理**：在 Z-score 標準化的基礎上，針對策略 a1 進行動態調整。在優化初期（NFE < 400）進行 Sign-Log 轉換以穩定全域架構；NFE >= 400 之後則回歸純 Z-score 以保留數據細節。
 
 ## 執行入口
+### 1. 檢查與安裝相依套件
+本延伸實驗除基礎數學與繪圖模組（Numpy, Matplotlib）外，核心測試函數依賴 `opfunu` 基準測試套件。執行前請確保已切換至相應環境並安裝：
+```bash
+pip install opfunu
+```
+### 2. 啟動實驗
 請直接運行此檔案以啟動：
 ```bash
 python run_experiments.py
