@@ -166,7 +166,7 @@ SUMMARY STATISTICS MATRIX
 | RHC1 | 2.149206e+02 | 5.222809e+02 | 3.363790e+02 | 1.149951e+02 |
 | RHC2 | 9.126642e+02 | 9.206502e+02 | 9.162500e+02 | 2.669143e+00 |
 
-<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/bac36b4f-b5bc-459d-840e-4c60f2ee0fce" />
+<img width="1000" height="600" alt="image" src="https://github.com/user-attachments/assets/bac36b4f-b5bc-459d-840e-4c60f2ee0fce" />
 
 <img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/af99304b-d271-4ef2-8e71-faf015fc6cc6" />
 <img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/baeed1c7-1a0c-4ca2-9c6b-48d771160eb0" />
@@ -194,11 +194,12 @@ SUMMARY STATISTICS MATRIX
 | RHC1 | 2.120482e+02 | 3.902936e+02 | 2.984559e+02 | 7.236709e+01 |
 | RHC2 | 9.140408e+02 | 9.215871e+02 | 9.171045e+02 | 2.978535e+00 |
 
-<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/e812ad9a-408d-4608-9ec1-cb4ab9366127" />
+<img width="1000" height="600" alt="image" src="https://github.com/user-attachments/assets/e812ad9a-408d-4608-9ec1-cb4ab9366127" />
 
 <img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/79193af2-d990-4b9d-b7ad-26d0358a0df2" />
 <img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/6f7381f6-8651-4d51-9eb1-a074cd77a321" />
 <img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/4b5d5115-caad-46d1-8c37-98301523567d" />
+<img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/42f4667a-5221-473d-b331-33a4f6f161b0" />
 
 
 #### 分支2:
@@ -215,6 +216,9 @@ SUMMARY STATISTICS MATRIX
 
 <img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/c762e051-5ca2-4e40-9ded-a1a5d42bdd79" />
 
+<img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/b16cf1d3-518a-4a39-9745-40c02aa5f6c2" />
+<img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/235010eb-00f7-4490-bbea-c1e7f2d5f514" />
+<img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/9a9b98f6-9f98-4fab-a057-058e259befd6" />
 
 ### 5.3第三階段：其他嘗試
 #### 分支一：更換Q-Learning
