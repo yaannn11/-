@@ -166,6 +166,10 @@ SUMMARY STATISTICS MATRIX
 | RHC1 | 2.149206e+02 | 5.222809e+02 | 3.363790e+02 | 1.149951e+02 |
 | RHC2 | 9.126642e+02 | 9.206502e+02 | 9.162500e+02 | 2.669143e+00 |
 
+<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/bac36b4f-b5bc-459d-840e-4c60f2ee0fce" />
+<img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/af99304b-d271-4ef2-8e71-faf015fc6cc6" /><img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/baeed1c7-1a0c-4ca2-9c6b-48d771160eb0" />
+
+
 ### 5.2第二階段：改善a2策略成功率
 * 分析 Cubic Kernel 導致 a2 策略成功率下降的問題。
 * 比較刪除 a2 與 Hybrid Kernel Strategy 的影響。
@@ -187,6 +191,7 @@ SUMMARY STATISTICS MATRIX
 | RHC1 | 2.120482e+02 | 3.902936e+02 | 2.984559e+02 | 7.236709e+01 |
 | RHC2 | 9.140408e+02 | 9.215871e+02 | 9.171045e+02 | 2.978535e+00 |
 
+<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/e812ad9a-408d-4608-9ec1-cb4ab9366127" />
 
 #### 分支2:
 SUMMARY STATISTICS MATRIX
