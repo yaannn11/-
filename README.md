@@ -138,9 +138,20 @@ SUMMARY STATISTICS MATRIX
 | RHC1 | 2.149206e+02 | 5.222809e+02 | 3.363790e+02 | 1.149951e+02 |
 | RHC2 | 9.126642e+02 | 9.206502e+02 | 9.162500e+02 | 2.669143e+00 |
 
-
 ## 50維實驗結果(終版)
+SUMMARY STATISTICS MATRIX
+| Function | Best | Worst | Mean | Std Dev |
+| :--- | :---: | :---: | :---: | :---: |
+| Ellipsoid | 1.369316e+02 | 2.168324e+02 | 1.831941e+02 | 3.450437e+01 |
+| Rosenbrock | 2.022741e+02 | 3.142801e+02 | 2.569127e+02 | 3.751878e+01 |
+| Ackley | 8.601083e+00 | 1.103635e+01 | 1.004204e+01 | 8.165020e-01 |
+| Griewank | 1.812844e+01 | 2.567847e+01 | 2.148626e+01 | 2.793551e+00 |
+| SRR | 2.046844e+02 | 2.810709e+02 | 2.341738e+02 | 2.731080e+01 |
+| RHC1 | 4.431538e+02 | 5.781589e+02 | 5.002263e+02 | 4.879833e+01 |
+| RHC2 | 1.055342e+03 | 1.173545e+03 | 1.102110e+03 | 4.505245e+01 |
+<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/c75b242c-8f92-479a-b9e9-b10270f9e86e" />
 
+## 100維實驗結果(終版)
 SUMMARY STATISTICS MATRIX
 | Function | Best | Worst | Mean | Std Dev |
 | :--- | :---: | :---: | :---: | :---: |
