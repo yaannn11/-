@@ -168,7 +168,6 @@ Evaluation:
 
 讓 Agent 不只可以判斷是否改善，也可以根據改善幅度評估不同操作策略的有效性。
 透過更完整的狀態資訊與 reward 設計，Agent 可以更精確的學習不同搜尋階段下的最佳操作選擇。
-此延伸主要著重於提升 ESA 的決策能力
 
 ## Experimental Results
 
