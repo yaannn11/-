@@ -211,9 +211,13 @@ SUMMARY STATISTICS MATRIX
 
 <img width="800" height="480" alt="image" src="https://github.com/user-attachments/assets/bac36b4f-b5bc-459d-840e-4c60f2ee0fce" />
 
-<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/af99304b-d271-4ef2-8e71-faf015fc6cc6" />
-<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/baeed1c7-1a0c-4ca2-9c6b-48d771160eb0" />
-<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/4ccb2cb5-d5ca-4513-8569-2cea5c6f5ca5" />
+<img width="300" height="180" alt="image" src="https://github.com/user-attachments/assets/af99304b-d271-4ef2-8e71-faf015fc6cc6" />
+<img width="300" height="180" alt="image" src="https://github.com/user-attachments/assets/baeed1c7-1a0c-4ca2-9c6b-48d771160eb0" />
+<img width="300" height="180" alt="image" src="https://github.com/user-attachments/assets/4ccb2cb5-d5ca-4513-8569-2cea5c6f5ca5" />
+<img width="300" height="180" alt="convergence_griewank" src="https://github.com/user-attachments/assets/a563c319-257c-4c35-aa51-397960258c22" />
+<img width="300" height="180" alt="convergence_srr" src="https://github.com/user-attachments/assets/cf6c7ca3-4a93-459f-ac6c-2b6456f719c1" />
+<img width="300" height="180" alt="convergence_rhc1" src="https://github.com/user-attachments/assets/54109137-99e2-4fb4-b4fe-ba008c56b78c" />
+<img width="300" height="180" alt="convergence_rhc2" src="https://github.com/user-attachments/assets/093d9cb6-ba62-44dc-bdef-bde61c4d3b85" />
 
 
 ### 5.2第二階段：改善a2策略成功率
@@ -241,10 +245,13 @@ SUMMARY STATISTICS MATRIX
 
 <img width="800" height="480" alt="image" src="https://github.com/user-attachments/assets/e812ad9a-408d-4608-9ec1-cb4ab9366127" />
 
-<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/79193af2-d990-4b9d-b7ad-26d0358a0df2" />
-<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/7975ae81-a609-4df2-ad14-2e9a552da8f2" />
-<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/4b5d5115-caad-46d1-8c37-98301523567d" />
-<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/42f4667a-5221-473d-b331-33a4f6f161b0" />
+<img width="300" height="180" alt="image" src="https://github.com/user-attachments/assets/79193af2-d990-4b9d-b7ad-26d0358a0df2" />
+<img width="300" height="180" alt="image" src="https://github.com/user-attachments/assets/7975ae81-a609-4df2-ad14-2e9a552da8f2" />
+<img width="300" height="180" alt="image" src="https://github.com/user-attachments/assets/4b5d5115-caad-46d1-8c37-98301523567d" />
+<img width="300" height="180" alt="convergence_griewank" src="https://github.com/user-attachments/assets/c525c437-2704-45d9-a4ad-331a13a88480" />
+<img width="300" height="180" alt="convergence_srr" src="https://github.com/user-attachments/assets/a50e75ca-8445-48bd-80c9-980fd7542464" />
+<img width="300" height="180" alt="convergence_rhc1" src="https://github.com/user-attachments/assets/c2633b20-7612-43e6-8ed0-6aa5c6460a9d" />
+<img width="300" height="180" alt="convergence_rhc2" src="https://github.com/user-attachments/assets/f2846b8f-128c-4e58-abf8-414fc3c9b019" />
 
 
 #### 分支二:
@@ -263,10 +270,14 @@ SUMMARY STATISTICS MATRIX
 
 <img width="800" height="480" alt="image" src="https://github.com/user-attachments/assets/c762e051-5ca2-4e40-9ded-a1a5d42bdd79" />
 
-<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/b16cf1d3-518a-4a39-9745-40c02aa5f6c2" />
-<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/23c154ac-2f06-4e9b-9160-1952392c0c8e" />
-<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/235010eb-00f7-4490-bbea-c1e7f2d5f514" />
-<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/9a9b98f6-9f98-4fab-a057-058e259befd6" />
+<img width="300" height="180" alt="image" src="https://github.com/user-attachments/assets/b16cf1d3-518a-4a39-9745-40c02aa5f6c2" />
+<img width="300" height="180" alt="image" src="https://github.com/user-attachments/assets/23c154ac-2f06-4e9b-9160-1952392c0c8e" />
+<img width="300" height="180" alt="image" src="https://github.com/user-attachments/assets/235010eb-00f7-4490-bbea-c1e7f2d5f514" />
+<img width="300" height="180" alt="convergence_griewank" src="https://github.com/user-attachments/assets/9459e37c-953e-47bf-9916-b3fbe9c1bc6c" />
+<img width="300" height="180" alt="convergence_srr" src="https://github.com/user-attachments/assets/5929097f-c291-4a49-9a9e-db337650fb88" />
+<img width="300" height="180" alt="convergence_rhc1" src="https://github.com/user-attachments/assets/483dfebe-b899-454c-a55f-3b00b67b7ce3" />
+<img width="300" height="180" alt="convergence_rhc2" src="https://github.com/user-attachments/assets/0ada4a5f-c732-437d-93bd-70b1df96c593" />
+
 
 ### 5.3第三階段：其他嘗試
 #### 分支一：更換Q-Learning
@@ -285,10 +296,13 @@ SUMMARY STATISTICS MATRIX
 
 <img width="800" height="480" alt="image" src="https://github.com/user-attachments/assets/0ef0d6e1-bf45-43c1-b94a-8c64393412c8" />
 
-<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/13ee0eea-2ddd-44ca-8dc6-9d3ee71964a3" />
-<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/9f10fa1e-8c84-451f-9099-9817c2162c7d" />
-<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/553f50d1-4acd-4a94-a9d9-c30c5bc504f2" />
-<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/c3d48b88-7125-4ea4-8ee7-81c060921350" />
+<img width="300" height="180" alt="image" src="https://github.com/user-attachments/assets/13ee0eea-2ddd-44ca-8dc6-9d3ee71964a3" />
+<img width="300" height="180" alt="image" src="https://github.com/user-attachments/assets/9f10fa1e-8c84-451f-9099-9817c2162c7d" />
+<img width="300" height="180" alt="image" src="https://github.com/user-attachments/assets/553f50d1-4acd-4a94-a9d9-c30c5bc504f2" />
+<img width="300" height="180" alt="convergence_griewank" src="https://github.com/user-attachments/assets/990e38f4-6c86-408f-842f-4b6c0cabe3b1" />
+<img width="300" height="180" alt="convergence_srr" src="https://github.com/user-attachments/assets/35912ec2-8fcc-48a4-af91-34c966c18135" />
+<img width="300" height="180" alt="convergence_rhc1" src="https://github.com/user-attachments/assets/8b8b5864-eb30-4fca-ab48-f17dfd540d42" />
+<img width="300" height="180" alt="convergence_rhc2" src="https://github.com/user-attachments/assets/8369ca57-6d4d-4608-807d-83fef452ca3b" />
 
 
 
@@ -308,10 +322,13 @@ SUMMARY STATISTICS MATRIX
 
 <img width="800" height="480" alt="image" src="https://github.com/user-attachments/assets/1c780080-570a-413d-95fb-b07195bc3b1b" />
 
-<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/b6fe7c96-e61e-48c3-9218-9f063709d963" />
-<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/59144855-c5f0-4449-8b76-972e352400bb" />
-<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/cbc0817d-e8cb-45c7-936a-b4c0dfd5459b" />
-<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/d4b56072-765c-47a9-9877-cb55d3814da8" />
+<img width="300" height="180" alt="image" src="https://github.com/user-attachments/assets/b6fe7c96-e61e-48c3-9218-9f063709d963" />
+<img width="300" height="180" alt="image" src="https://github.com/user-attachments/assets/59144855-c5f0-4449-8b76-972e352400bb" />
+<img width="300" height="180" alt="image" src="https://github.com/user-attachments/assets/cbc0817d-e8cb-45c7-936a-b4c0dfd5459b" />
+<img width="300" height="180" alt="convergence_griewank" src="https://github.com/user-attachments/assets/5f978a9b-3fc7-4442-bab9-3f1db93d28c9" />
+<img width="300" height="180" alt="convergence_srr" src="https://github.com/user-attachments/assets/9954a5f4-5420-4f8e-9bef-7271fca0fa6b" />
+<img width="300" height="180" alt="convergence_rhc1" src="https://github.com/user-attachments/assets/a45f7710-0f70-44f4-9664-7f896ce4a9e8" />
+<img width="300" height="180" alt="convergence_rhc2" src="https://github.com/user-attachments/assets/50a228e5-df95-4402-b749-dcb1fd3d61bf" />
 
 
 
@@ -328,13 +345,13 @@ SUMMARY STATISTICS MATRIX
 | RHC2 | 9.126642e+02 | 9.206502e+02 | 9.162500e+02 | 2.669143e+00 |
 <img width="800" height="480" alt="image" src="https://github.com/user-attachments/assets/2902fdc2-84dc-4f1c-ab12-5a93ac3655c0" />
 
-<img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/5768477b-0192-4864-b5f1-479b6eb13628" />
-<img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/033c5bd3-d108-40ab-90bc-16410814a7f0" />
-<img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/a1d1bcf7-69ca-460d-bcaa-3dec804b34cc" />
-<img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/6f5a50fc-fdb5-4bd6-bcab-9b9e1342fc0c" />
-<img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/5d8a1d01-dc59-4b56-af92-a72bdf465762" />
-<img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/bb499dee-cecf-4d27-8c52-e9460f7984bd" />
-<img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/90fdf105-a180-420b-9b42-79f68a2417ff" />
+<img width="300" height="180" alt="image" src="https://github.com/user-attachments/assets/5768477b-0192-4864-b5f1-479b6eb13628" />
+<img width="300" height="180" alt="image" src="https://github.com/user-attachments/assets/033c5bd3-d108-40ab-90bc-16410814a7f0" />
+<img width="300" height="180" alt="image" src="https://github.com/user-attachments/assets/a1d1bcf7-69ca-460d-bcaa-3dec804b34cc" />
+<img width="300" height="180" alt="image" src="https://github.com/user-attachments/assets/6f5a50fc-fdb5-4bd6-bcab-9b9e1342fc0c" />
+<img width="300" height="180" alt="image" src="https://github.com/user-attachments/assets/5d8a1d01-dc59-4b56-af92-a72bdf465762" />
+<img width="300" height="180" alt="image" src="https://github.com/user-attachments/assets/bb499dee-cecf-4d27-8c52-e9460f7984bd" />
+<img width="300" height="180" alt="image" src="https://github.com/user-attachments/assets/90fdf105-a180-420b-9b42-79f68a2417ff" />
 
 
 
@@ -352,13 +369,13 @@ SUMMARY STATISTICS MATRIX
 | RHC2 | 1.055342e+03 | 1.173545e+03 | 1.102110e+03 | 4.505245e+01 |
 <img width="800" height="480" alt="image" src="https://github.com/user-attachments/assets/c75b242c-8f92-479a-b9e9-b10270f9e86e" />
 
-<img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/e18a4fd9-c21f-442b-b233-ef62745f0aa2" />
-<img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/2a482046-3c1a-4780-97d6-eea842f865b1" />
-<img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/f12d33ac-4b97-41be-9374-e5ebb173d20a" />
-<img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/1859c0b4-bafa-4c53-80d2-3e5c7782956c" />
-<img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/56a3eb18-3d33-45e9-be9c-a8edfb4d7750" />
-<img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/aad01b50-ce35-4299-9231-658aa5ce0ca3" />
-<img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/630c5fef-4dc5-4111-8026-709dab0f41a5" />
+<img width="300" height="180" alt="image" src="https://github.com/user-attachments/assets/e18a4fd9-c21f-442b-b233-ef62745f0aa2" />
+<img width="300" height="180" alt="image" src="https://github.com/user-attachments/assets/2a482046-3c1a-4780-97d6-eea842f865b1" />
+<img width="300" height="180" alt="image" src="https://github.com/user-attachments/assets/f12d33ac-4b97-41be-9374-e5ebb173d20a" />
+<img width="300" height="180" alt="image" src="https://github.com/user-attachments/assets/1859c0b4-bafa-4c53-80d2-3e5c7782956c" />
+<img width="300" height="180" alt="image" src="https://github.com/user-attachments/assets/56a3eb18-3d33-45e9-be9c-a8edfb4d7750" />
+<img width="300" height="180" alt="image" src="https://github.com/user-attachments/assets/aad01b50-ce35-4299-9231-658aa5ce0ca3" />
+<img width="300" height="180" alt="image" src="https://github.com/user-attachments/assets/630c5fef-4dc5-4111-8026-709dab0f41a5" />
 
 
 ## 100維實驗結果(終版)
@@ -374,13 +391,13 @@ SUMMARY STATISTICS MATRIX
 | RHC2 | 1.460853e+02 | 1.533317e+02 | 1.496832e+02 | 2.648687e+00 |
 <img width="800" height="480" alt="image" src="https://github.com/user-attachments/assets/cee3b968-8f4e-47ab-abc2-01964c89ba61" />
 
-<img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/9a3d4145-0f54-417e-900f-60a82c4e2c01" />
-<img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/63721ccf-203b-4c1e-82bc-7c50e460488f" />
-<img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/c9e03d80-6375-4ea9-966a-f930f7b659f6" />
-<img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/5daab6d6-fc9b-4831-8874-411908a7b553" />
-<img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/461cee62-04b2-4167-ad35-8a2099d1e530" />
-<img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/1366998e-edc3-4414-a8b0-7f1f04ac2f1a" />
-<img width="250" height="150" alt="image" src="https://github.com/user-attachments/assets/1b6e759d-d068-4318-8a5d-32eae12cc053" />
+<img width="300" height="180" alt="image" src="https://github.com/user-attachments/assets/9a3d4145-0f54-417e-900f-60a82c4e2c01" />
+<img width="300" height="180" alt="image" src="https://github.com/user-attachments/assets/63721ccf-203b-4c1e-82bc-7c50e460488f" />
+<img width="300" height="180" alt="image" src="https://github.com/user-attachments/assets/c9e03d80-6375-4ea9-966a-f930f7b659f6" />
+<img width="300" height="180" alt="image" src="https://github.com/user-attachments/assets/5daab6d6-fc9b-4831-8874-411908a7b553" />
+<img width="300" height="180" alt="image" src="https://github.com/user-attachments/assets/461cee62-04b2-4167-ad35-8a2099d1e530" />
+<img width="300" height="180" alt="image" src="https://github.com/user-attachments/assets/1366998e-edc3-4414-a8b0-7f1f04ac2f1a" />
+<img width="300" height="180" alt="image" src="https://github.com/user-attachments/assets/1b6e759d-d068-4318-8a5d-32eae12cc053" />
 
 ---
 ## 執行
