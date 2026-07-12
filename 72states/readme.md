@@ -47,7 +47,7 @@ State size:
 4 actions × 3 search stages × 3 improvement levels × 2 success states = 72 states
 
 ---
-## Search Stage
+### Search Stage
 
 使用 function evaluation ratio:
 progress = nfe / max_nfe
@@ -64,7 +64,7 @@ progress = nfe / max_nfe
 - 後期偏向 exploitation
 ---
 
-## Improvement Level
+### Improvement Level
 
 根據近期改善率分類：
 | State | Meaning |
@@ -73,13 +73,12 @@ progress = nfe / max_nfe
 | 1 | Small improvement |
 | 2 | Large improvement |
 
-
 改善率:
 improvement = best_y_before - self.best_y
 
 ---
 
-# 2. Continuous Reward
+## 2. Continuous Reward
 
 原始 ESA:
 reward:0 or 1
@@ -97,7 +96,7 @@ reward = improvement / (abs(best_y_before)+1e-12)
 
 ---
 
-# 3. Adaptive Temperature
+## 3. Adaptive Temperature
 
 加入 temperature adjustment。
 原本 Q-learning 使用固定 exploration rate。
