@@ -174,6 +174,7 @@ Evaluation:
 ## 實驗結果對比 (Experimental Results)
 
 以下為原始 ESA（Original ESA）與本研究提出的改良版 ESA（Proposed ESA）在各個測試函數（Benchmark Functions）上的表現對比（數值皆為 Mean ± Std，以尋找極小值為目標）：
+
 以30維為例:
 | Function | Original ESA (Mean ± Std) | Proposed ESA (Mean ± Std) | 較佳 (Better) |
 | :--- | :--- | :--- | :--- |
